@@ -5,6 +5,6 @@ steps:
 #   args: ['clone', 'https://github.com/renanqb/gae_hello_world/tree/master/appengine/flexible/HelloWorld']
 #   env: ['PROJECT_ROOT=hello']
 - name: "gcr.io/cloud-builders/gcloud"
-  args: ["app", "deploy"]
+  args: ["app", "deploy", "--image-url=gcr.io/$PROJECT_ID/app"]
   dir: 'appengine/flexible/HelloWorld'
 timeout: "1600s"
