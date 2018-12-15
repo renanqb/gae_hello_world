@@ -5,4 +5,5 @@ steps:
 #   env: ['PROJECT_ROOT=hello']
 - name: "gcr.io/cloud-builders/gcloud"
   args: ["app", "deploy"]
+  dir: 'appengine/flexible/HelloWorld'
 timeout: "1600s"
